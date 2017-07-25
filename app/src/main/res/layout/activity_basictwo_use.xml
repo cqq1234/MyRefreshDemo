@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activities.using.BasicUseTwoActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/AppTheme.Toolbar"
+        android:id="@+id/toolbar"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/title_activity_using_basic_two"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlDragRate="0.7"
+            app:srlHeaderMaxDragRate="1.3"
+            app:srlPrimaryColor="@color/colorPrimary"
+            app:srlAccentColor="@android:color/white"
+            app:srlEnableHeaderTranslationContent="true">
+            <com.scwang.smartrefresh.header.DropboxHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+            </android.support.v7.widget.RecyclerView>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

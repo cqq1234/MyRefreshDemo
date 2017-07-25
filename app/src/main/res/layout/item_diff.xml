@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@mipmap/image_avatar_1"
+            android:layout_below="@+id/attention"
+            android:layout_toLeftOf="@+id/avatar2"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/image_avatar_2"
+            android:layout_below="@+id/attention"
+            android:layout_centerHorizontal="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@mipmap/image_avatar_3"
+            android:layout_toRightOf="@+id/avatar2"
+            android:layout_below="@+id/attention" />
+        <TextView
+            android:id="@+id/attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/shape_item_attention"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="关注他"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="昵称：一抹透亮外加蛋疼"
+            android:layout_below="@+id/avatar2"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/item_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱好：篮球 台球 唱歌 嘻哈"
+            android:layout_below="@+id/item_name"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="描述：哥哥姐姐看看我这张帅脸吧"
+            android:layout_below="@+id/item_love"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
